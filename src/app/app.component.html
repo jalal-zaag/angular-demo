@@ -15,24 +15,21 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="DATA_BINDING_PAGE_PATH">Data-Binding</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="CONTROL_FLOW_PATH">Control flow</a>
+        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">
-        <button
-         class="btn btn-primary"
-          type="button"
-          >Search</button>
+        <button class="btn btn-primary" type="button">Search</button>
       </form>
     </div>
   </div>
 </nav>
 
 <div>
-  <button
-         class="btn btn-primary"
-         (click)="showMessage()"
-          type="button"
-          >Search</button>
+  <button class="btn btn-primary" (click)="showMessage()" type="button">Search</button>
 </div>
 
 <router-outlet></router-outlet>

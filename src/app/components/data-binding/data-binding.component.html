@@ -1,2 +1,12 @@
 <p>data-binding works!</p>
 <p>{{ courseName }}</p>
+
+<p>Th output is - {{courseName}}</p>
+
+<div>
+    <input type="text" [(ngModel)]="courseName" placeholder="Course Name" />
+</div>
+
+<button (click)="btnClicked()">
+    button
+</button>
