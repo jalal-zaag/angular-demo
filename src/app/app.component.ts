@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { ADMIN_PAGE_PATH, CONTROL_FLOW_PATH, DATA_BINDING_PAGE_PATH, USER_PAGE_PATH } from './helpers/Slug';
+import { ADMIN_PAGE_PATH, CONTROL_FLOW_PATH, DATA_BINDING_PAGE_PATH, GET_API_PATH, PIPE_PATH, USER_PAGE_PATH } from './helpers/Slug';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,8 @@ export class AppComponent {
   protected readonly ADMIN_PAGE_PATH = ADMIN_PAGE_PATH;
   protected readonly DATA_BINDING_PAGE_PATH = DATA_BINDING_PAGE_PATH;
   protected readonly CONTROL_FLOW_PATH = CONTROL_FLOW_PATH;
+  protected readonly GET_API_PATH = GET_API_PATH;
+  protected readonly PIPE_PATH = PIPE_PATH;
 
   showMessage = () => {
     alert("working")

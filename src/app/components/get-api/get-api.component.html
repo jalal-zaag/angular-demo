@@ -1,0 +1,13 @@
+<p>get-api works!</p>
+
+<div>
+    <button type="button" (click)="getUsers()">Get Users</button>
+</div>
+
+<div>
+    <ul>
+        @for (item of userList; track $index) {
+            <li>{{item.name}} - {{item.email}}</li>
+        }
+    </ul>
+</div>
