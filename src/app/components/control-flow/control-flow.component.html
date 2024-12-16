@@ -1,1 +1,41 @@
-<p>control-flow works!</p>
+<p>this is control flow</p>
+@if (isDivShow) {
+<div class="bg-danger">
+    Bangladesh
+</div>
+}
+
+<div>
+    <button type="button" (click)="divShow(true)">Show</button>
+    <button type="button" (click)="divShow(false)">Hide</button>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @for (item of studentList; track $index) {
+            <tr>
+                <td>{{$index+1}}</td>
+                <td>{{item.name.toUpperCase()}}</td>
+                <td>{{item.city}}</td>
+                <td [style.backgroundColor]="item.isActive ? 'green' : 'red'">
+                    @if (item.isActive) {
+                    <span>Student is active</span>
+                    } @else {
+                    <span>Student is deactive</span>
+                    }
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
